@@ -5,7 +5,7 @@ function App() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/message")
+    fetch("https://simple-backfront-2.onrender.com/api/message")
       .then(res => res.text())
       .then(data => setMessage(data));
   }, []);
